@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María González - Diseñadora Gráfica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MG</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hola, soy</span>
+                    <span class="hero-name">María González</span>
+                </h1>
+                <p class="hero-subtitle">Diseñadora Gráfica & Creativa Visual</p>
+                <p class="hero-description">
+                    Transformo ideas en experiencias visuales impactantes. 
+                    Especializada en branding, diseño editorial y comunicación visual.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <img src="/placeholder.svg?height=400&width=400" alt="María González" class="profile-img">
+                    <div class="floating-elements">
+                        <div class="floating-element element-1">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="floating-element element-2">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <div class="floating-element element-3">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">Conoce mi historia y experiencia</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Con más de 5 años de experiencia en diseño gráfico, me especializo en crear 
+                        identidades visuales que conectan con las audiencias y comunican mensajes de 
+                        manera efectiva.
+                    </p>
+                    <p>
+                        Mi enfoque combina creatividad, estrategia y técnica para desarrollar soluciones 
+                        visuales que no solo se ven bien, sino que también funcionan para los objetivos 
+                        de cada proyecto.
+                    </p>
+                    <div class="skills">
+                        <h3>Habilidades</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-adobe"></i>
+                                <span>Adobe Creative Suite</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Branding & Identidad</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-book"></i>
+                                <span>Diseño Editorial</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Diseño Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Proyectos Completados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <p class="section-subtitle">Una selección de mis trabajos más destacados</p>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-item" data-category="branding">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proyecto 1">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Identidad Corporativa</h3>
+                                <p>Branding completo para startup tecnológica</p>
+                                <button class="view-project" data-project="1">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="editorial">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proyecto 2">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Revista Digital</h3>
+                                <p>Diseño editorial para publicación mensual</p>
+                                <button class="view-project" data-project="2">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="digital">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proyecto 3">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>App Móvil</h3>
+                                <p>Diseño de interfaz para aplicación de fitness</p>
+                                <button class="view-project" data-project="3">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="branding">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proyecto 4">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Branding Restaurante</h3>
+                                <p>Identidad visual para cadena de restaurantes</p>
+                                <button class="view-project" data-project="4">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="editorial">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proyecto 5">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Portada de Libro</h3>
+                                <p>Diseño de portada para novela contemporánea</p>
+                                <button class="view-project" data-project="5">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="digital">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proyecto 6">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Landing Page</h3>
+                                <p>Diseño web para agencia de marketing</p>
+                                <button class="view-project" data-project="6">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>maria@ejemplo.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+34 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>María González</h3>
+                    <p>Diseñadora Gráfica</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobre-mi">Sobre Mí</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 María González. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para proyectos -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Contenido del proyecto se carga aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
